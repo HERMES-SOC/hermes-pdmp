@@ -76,12 +76,12 @@ Table 4-5. NEMISIS Data Products
 Table 4-6. MERiT Data Products
 |Data Level|Product|Description|
 |-|-|-|
-|1|Counts|Raw time-ordered instrument data for each differential channel (x31) binned data in energy ranges, number of times that detector exceeded a threshold anything that triggers a thresholds singles counts (x16)
-|1|Pulse Heights|Pulse Height of triggers above threshold ( particles events raw events pulses) checksum validated|
-|2|Electron Energy Spectra|Electron spectra in physical units|
-|2|Proton Energy Spectra|Proton spectra in physical units|
-|3|TBD||
-|4|TBD||
+|1|Counts|Raw time-ordered count data for each differential channel binned in energy ranges for each detector head (electrons and protons), counts represent the number of times that detector head exceeded a threshold. There are 31 energy bins, 2 detector heads, and count data is 16 bits.
+|1|Pulse Heights|Pulse Height of triggers above threshold (particles events raw events pulses) checksum validated|
+|2|Electron Energy Spectra, differential flux|Electron spectra in physical units corrected for background, saturation, pileup-etc.|
+|2|Proton Energy Spectra, differential flux|Proton spectra in physical units corrected for background, saturation, pileup-etc.|
+|3|Directional differential flux||
+|4|Spectral fitted flux in instantaneous look direction and sunward direction||
 |QL|Counts|Same as Level 1 but deadtime corrected|
 |Auxiliary|TDB||
 
